@@ -1,1 +1,11 @@
+Reto 4: Sklearn (Fenómeno Social - Migración y Desplazamiento en Colombia)
+El Problema:
+Debido a dinámicas sociales complejas, muchos municipios en Colombia reciben flujos migratorios repentinos. El gobierno necesita predecir el "Índice de Necesidad de Asistencia" (INA) para asignar recursos médicos y de vivienda de manera preventiva. Los datos suelen tener valores atípicos (outliers) debido a crisis puntuales.
+Tu Misión:
+Escribe una función llamada predecir_demanda_asistencia(df, target_col) que realice lo siguiente:
+1.	Separe las características (X) de la variable objetivo (y) usando target_col.
+2.	Divida los datos en conjuntos de entrenamiento (80%) y prueba (20%) con un random_state=42.
+3.	Dado que los datos sociales presentan distribuciones sesgadas, aplique un RobustScaler de sklearn a las características de entrenamiento (para mitigar el efecto de valores atípicos) y transforme el conjunto de prueba con el mismo escalador.
+4.	Ajuste un modelo de HuberRegressor (un modelo de regresión robusto a outliers) o una LinearRegression estándar con los datos escalados.
+5.	Devuelva el Coeficiente de Determinación () obtenido en el conjunto de prueba para evaluar la precisión de la política pública
 
