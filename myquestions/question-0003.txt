@@ -1,1 +1,10 @@
+Reto 3: Sklearn (Ciberseguridad - Detección de Intrusos)
+El Problema:
+Analizas logs de red para detectar ataques de denegación de servicio (DoS). El dataset X contiene frecuencias de paquetes y y es una etiqueta binaria (1: Ataque, 0: Normal). Debido a que los ataques son raros, el dataset está muy desbalanceado.
+Tu Misión:
+Escribe una función llamada detectar_anomalias_red(X, y) que realice lo siguiente:
+1.	Entrene un modelo de clasificación (ej. DecisionTreeClassifier o LogisticRegression) utilizando los datos de entrada.
+2.	Realice predicciones sobre el mismo conjunto X.
+3.	Calcule el Balanced Accuracy Score (que compensa el desbalance de clases) y la Matriz de Confusión.
+4.	Devuelva una tupla con: (el valor del Balanced Accuracy como float, la Matriz de Confusión como un array de numpy).
 
