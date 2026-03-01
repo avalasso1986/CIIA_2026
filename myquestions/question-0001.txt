@@ -1,1 +1,10 @@
+Reto 1: Pandas (AgTech - Agricultura de Precisión)
+El Problema:
+Trabajas con datos de drones que monitorean cultivos. Recibes un DataFrame con registros de humedad del suelo (humedad), índice de vegetación (ndvi) y un timestamp de la captura en diferentes lote_id.
+Tu Misión:
+Escribe una función llamada analizar_estres_hidrico(df) que realice lo siguiente:
+1.	Convierta la columna timestamp a objetos datetime de Pandas.
+2.	Clasifique el momento de la medición en una nueva columna periodo: Madrugada (00:00-05:59), Cénit (06:00-17:59) y Ocaso (18:00-23:59).
+3.	Filtre el DataFrame para incluir solo los registros donde el ndvi sea superior a 0.6 (plantas sanas).
+4.	Devuelva una Serie de Pandas que muestre el promedio de humedad agrupado por lote_id y periodo (índice multinivel).
 
