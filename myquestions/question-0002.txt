@@ -1,1 +1,10 @@
+Reto 2: Pandas (Minería Estratégica - Tierras Raras)
+El Problema:
+Trabajas para un fabricante de semiconductores analizando la disponibilidad de Tierras Raras (Lantano, Neodimio, etc.) en diferentes yacimientos globales. Recibes un DataFrame con yacimiento_id, elemento, concentracion_ppm (partes por millón) y costo_extraccion_usd. 
+Tu Misión:
+Escribe una función llamada analizar_viabilidad_tierras_raras(df) que realice lo siguiente:
+1.	Cree una columna llamada eficiencia_costo calculada como (concentracion_ppm / costo_extraccion_usd).
+2.	Filtre el DataFrame para conservar solo los registros donde la concentracion_ppm esté por encima del percentil 25 de su respectivo elemento.
+3.	Genere una tabla dinámica (pivot table) que muestre la eficiencia_costo promedio, cruzando el elemento (filas) y una clasificación del costo en dos categorías: 'Bajo Costo' (menor o igual a la mediana de costo_extraccion_usd) y 'Alto Costo' (mayor a la mediana).
+4.	Devuelva el DataFrame resultante, asegurando que los valores faltantes (NaN) sean reemplazados por 0.0.
 
